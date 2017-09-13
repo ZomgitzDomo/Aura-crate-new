@@ -1,3 +1,5 @@
+@import url(../fonts/css/fontello.css);
+
 
 /*----------------------------
 Colors:
@@ -58,7 +60,7 @@ body {
 }
 
 #page {
-
+  margin:0px auto;
 }
 
 div.clear {
@@ -78,6 +80,8 @@ a {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
+  cursor: pointer;
+  cursor: inherit;
 }
 
 a:hover {
@@ -100,6 +104,10 @@ h2 {
   padding:0px;
   margin:10px 0px;
   margin-bottom: 20px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 h3 {
@@ -112,6 +120,10 @@ h3 {
   color:#a59482;
   padding:0px;
   margin:10px 0px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 p {
@@ -122,6 +134,10 @@ p {
   text-transform: uppercase;
   text-align: left;
   color: #77777a;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 /* 2. Background
@@ -137,7 +153,10 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   opacity: .5;
-
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .footer-noise {
@@ -150,6 +169,10 @@ p {
   background-size: 90%;
   background-position: left;
   background-repeat: no-repeat;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .lorem-texture {
@@ -162,6 +185,10 @@ p {
   background-size: 100%;
   background-position: left;
   background-repeat: no-repeat;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .Signs-texture {
@@ -176,6 +203,10 @@ p {
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .prologue-noise {
@@ -188,6 +219,10 @@ p {
   background-size: 60%;
   background-position: right;
   background-repeat: no-repeat;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .feathers {
@@ -203,11 +238,33 @@ p {
 /* 4. Header/footer
 ----------------------------*/
 
+.icon-aura-crate-mark {
+  color:#a59482;
+  font-size: 7rem;
+  margin-left: -10px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    margin-right: 0em;
+    text-align: center;
+    opacity:1;
+    margin-left: 0em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: none;
+}
 
 header {
+  clear: both;
   position: fixed;
+  top:0px;
   padding: 30px 40px;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .header {
@@ -239,7 +296,7 @@ a.gold {
 }
 
 a.gold:hover {
-
+  color: #7764a0;
 }
 
 footer {
@@ -253,206 +310,536 @@ footer {
 }
 
 .footer--epilogue {
-  width:33.3%;
-  display: block;
+  width:45%;
   position: relative;
+  display: block;
   float: left;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+}
+
+.footer--wrap {
+  width:55%;
+  position: relative;
+  display: block;
+  float: left;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .footer--social {
-  width:33%;
-  display: block;
-  position: relative;
-  float: left;
+  width:25%;
   text-align: center;
-  font-size: 1.25rem;
+  position: relative;
+  display: block;
+  float: left;
+  margin-top: -10px;
 }
 
 .footer--copy {
+  width:75%;
   font-family: "Cochin", serif;
   font-weight: ;
   font-size: .625rem;
   color: #77777a;
   text-transform: uppercase;
   text-align: right;
-  width:33.3%;
-  display: block;
   position: relative;
+  display: block;
   float: left;
   margin-top: 10px;
 }
 
+.footer--social a:hover {
+    color:#a59482;
+}
+
+.icon-aura-crate-ig {
+  font-size: 1.5rem;
+}
+
+.icon-aura-crate-fb {
+  font-size: 1.25rem;
+}
+
+.icon-aura-crate-tweet {
+  font-size: 1.25rem;
+}
 
 /* 5. Section
 ----------------------------*/
 
-#main-wrap {
-  overflow: auto;
-  height: 400px;
+.Indiv {
+  width:100%;
+  position: relative;
+  padding: 30px 40px;
+  margin: 0px auto;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
-
-/*.parallax {
-  overflow: auto;
-  height: 200px;
-}*/
-nav {
-
-}
-
-#content {
-	position:absolute;
-}
-
-/*-------------------------------------
-| first content
--------------------------------------*/
 .content-image {
-    width:48%;
-    padding: 20px 1%;
-    right: 90px;
-    top: 100px;
-    display: block;
-    position: relative;
-    float:right;
+  width:48%;
+  position: absolute;
+  float: right;
+  padding: 20px 1%;
+  right: 90px;
+  top: 100px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .content-info {
-    width:48%;
-    height: 200px;
-    padding: 20px 1%;
-    left: -220px;
-    top: -180px;
-    display: block;
-    position: relative;
-    float:right;
+  width:48%;
+  position: absolute;
+  left: 200px;
+  top:50px;
+  float: right;
+  padding: 20px 1%;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
 
 .content-info p {
   max-width: 70%;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
 }
-
-/*-------------------------------------
-| second content
--------------------------------------*/
-
-.content-info-2 {
-    width:48%;
-    height: 200px;
-    padding: 20px 1%;
-    left: 0px;
-    top: 0px;
-    display: block;
-    position: relative;
-    float:right;
-}
-
-.content-info-2 h3 {
-  font-size: 2rem;
-}
-.content-info-2 p {
-  max-width: 70%;
-  font-size: 1rem;
-}
-
-/*-------------------------------------
-| third content
--------------------------------------*/
-
-.content-info-3 {
-    width:48%;
-    height: 200px;
-    padding: 20px 1%;
-    left: 0px;
-    top: 0px;
-    display: block;
-    position: relative;
-    float:right;
-}
-
-.content-info-3 h3 {
-  font-size: 2rem;
-}
-.content-info-3 p {
-  max-width: 70%;
-  font-size: 1rem;
-}
-
-
-
-
-
-/*.indiv-page-wrap {
-  position: absolute;
-  left: 90px;
-  top: 150px;
-  width:75%;
-}*/
-
 
 
 /* 6. Media Queries
 ----------------------------*/
+@media (min-width: 1440px) {
 
-/*-------------------------------------
-| parallax test
--------------------------------------*/
-
-.wrapper {
-  /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 100vh;
-  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-  overflow-x: hidden;
-  /* Enable scrolling on the page. */
-  overflow-y: auto;
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
 }
 
-.section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+@media (min-width: 1152px) and (max-width: 1280px)  {
 
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+  /* NOTE: Footer floats */
+  .footer--wrap {
+    width:55%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--epilogue {
+    width:45%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--social {
+    width:25%;
+    float: left;
+    text-align: center;
+  }
+
+  .footer--copy {
+    text-align: right;
+    width:75%;
+    float: left;
+    margin-left: auto;
+  }
+
+  /* NOTE: sections/individual pages */
+  .content-image {
+    right: 50px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info {
+    left: 125px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
 }
 
-.parallax::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+@media (min-width: 992px) and (max-width: 1152px)  {
 
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
+  /* NOTE: Footer floats */
+  .footer--wrap {
+    width:55%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--epilogue {
+    width:45%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--social {
+    width:25%;
+    float: left;
+    text-align: center;
+  }
+
+  .footer--copy {
+    text-align: right;
+    width:75%;
+    float: left;
+    margin-left: auto;
+  }
+
+  /* NOTE: sections/individual pages */
+  .content-image {
+    right: 50px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info {
+    left: 100px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
 }
 
-/* The styling for the static div. */
-.static {
-  /*background: red;*/
+@media (min-width: 772px) and (max-width: 992px)  {
+
+  /* NOTE: Footer floats */
+  .footer--wrap {
+    width:55%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--epilogue {
+    width:45%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--social {
+    width:30%;
+    float: left;
+  }
+
+  .footer--copy {
+    width:70%;
+    float: left;
+    margin-left: auto;
+  }
+
+  /* NOTE: sections/individual pages */
+  .Indiv {
+    width:100%;
+    position: relative;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-image {
+    width:38%;
+    position: absolute;
+    float: right;
+    padding: 20px 1%;
+    right: 50px;
+    top: 100px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info {
+    width:58%;
+    position: absolute;
+    left: 50px;
+    top:50px;
+    float: right;
+    padding: 20px 1%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info p {
+    max-width: 70%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
 }
 
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url(../assets/subtle-image-texture.png);
+@media (min-width: 500px) and (max-width: 772px)  {
+
+  /* NOTE: Backgrounds */
+  .lorem-texture {
+    bottom:130px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .Signs-texture {
+    position: fixed;
+    right: -50px;
+    top:-30px;
+    background-size: 90%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  /* NOTE: logo */
+  .icon-aura-crate-mark {
+    font-size: 5.5rem;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  /* NOTE: Footer floats */
+  .footer--wrap {
+    width:70%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--epilogue {
+    width:30%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--social {
+    width:100%;
+    float: none;
+    text-align: right;
+  }
+
+  .footer--copy {
+    text-align: right;
+    width:70%;
+    float: none;
+    margin-left: auto;
+  }
+
+  /* NOTE: sections/individual pages */
+  .Indiv {
+    width:80%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-image {
+    width:100%;
+    position: relative;
+    float: none;
+    padding: 20px 1%;
+    right: 0px;
+    top: 0px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info {
+    width:100%;
+    position:relative;
+    left: 0px;
+    top:0px;
+    float: none;
+    padding: 20px 1%;
+    margin-top: 20px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info p {
+    max-width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
 }
 
-.bg2::after {
-  background-image: url(../assets/subtle-texture-1.png);
+@media (max-width: 500px) {
+
+  /* NOTE: Backgrounds */
+  .subtle-image-texture {
+    background-position: center;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .lorem-texture {
+    bottom:100px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .Signs-texture {
+    position: fixed;
+    right: -140px;
+    top:-30px;
+    padding:30px 0px;
+    background-size: 90%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  /* NOTE: logo */
+  .icon-aura-crate-mark {
+    font-size: 5.5rem;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  /* NOTE: all links  */
+  a {
+    font-size: .6875rem;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  /* NOTE: Footer floats */
+  .footer--wrap {
+    width:70%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--epilogue {
+    width:30%;
+    float: left;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .footer--social {
+    width:100%;
+    float: none;
+    text-align: right;
+  }
+
+  .footer--copy {
+    text-align: right;
+    width:70%;
+    float: none;
+    margin-left: auto;
+  }
+
+  /* NOTE: sections/individual pages */
+  .Indiv {
+    width:100%;
+    position: relative;
+    padding: 30px 40px;
+    margin:0px auto;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-image {
+    width:100%;
+    position: relative;
+    float: none;
+    padding: 20px 1%;
+    right: 0px;
+    top: 0px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info {
+    width:100%;
+    position:relative;
+    left: 0px;
+    top:0px;
+    float: none;
+    padding: 20px 1%;
+    margin-top: 20px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+
+  .content-info p {
+    max-width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
 }
